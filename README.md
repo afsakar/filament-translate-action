@@ -9,7 +9,7 @@
 
 This package provides a simple action to translate fields in FilamentPHP.
 
-![Screenshot](https://raw.githubusercontent.com/afsakar/filament-translate-action/main/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/afsakar/filament-translate-action/main/art/filament-translatable-action.gif)
 
 ## Installation
 
