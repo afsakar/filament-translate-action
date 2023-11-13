@@ -6,7 +6,6 @@ use Afsakar\FilamentTranslateAction\Actions\TranslatableAction;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Afsakar\FilamentTranslateAction\Testing\TestsFilamentTranslateAction;
 
 class FilamentTranslateActionServiceProvider extends PackageServiceProvider
 {

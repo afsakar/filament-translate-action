@@ -9,5 +9,5 @@ return [
     'success_title' => 'Başarılı!',
     'success_message' => 'İçerik başarıyla çevrildi.',
     'error_title' => 'Hata!',
-    'error_message' => 'İçerik çevrilemedi.'
+    'error_message' => 'İçerik çevrilemedi.',
 ];

@@ -9,5 +9,5 @@ return [
     'success_title' => 'Success!',
     'success_message' => 'Content has been translated successfully.',
     'error_title' => 'Error!',
-    'error_message' => 'Content could not be translated.'
+    'error_message' => 'Content could not be translated.',
 ];

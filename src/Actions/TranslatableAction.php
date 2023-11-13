@@ -2,11 +2,11 @@
 
 namespace Afsakar\FilamentTranslateAction\Actions;
 
+use Afsakar\FilamentTranslateAction\Helpers\GoogleTranslate;
+use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Notifications\Notification;
-use Filament\Forms\Components\Actions\Action;
-use Afsakar\FilamentTranslateAction\Helpers\GoogleTranslate;
 
 class TranslatableAction
 {
@@ -21,14 +21,14 @@ class TranslatableAction
                         ->form([
                             Select::make('source')
                                 ->label(__('filament-translate-action::filament-translate-action.source'))
-                                ->options(fn() => getLangs())
+                                ->options(fn () => getLangs())
                                 ->searchable()
-                                ->default((string)config('app.locale')),
+                                ->default((string) config('app.locale')),
                             Select::make('target')
                                 ->label(__('filament-translate-action::filament-translate-action.target'))
-                                ->options(fn() => getLangs())
+                                ->options(fn () => getLangs())
                                 ->searchable()
-                                ->default((string)config('app.locale')),
+                                ->default((string) config('app.locale')),
                         ])
                         ->modalSubmitActionLabel(__('filament-translate-action::filament-translate-action.translate'))
                         ->action(function (array $data) use ($component) {
@@ -51,6 +51,7 @@ class TranslatableAction
                                     ->body(__('filament-translate-action::filament-translate-action.error_message'))
                                     ->danger()
                                     ->send();
+
                                 return $component->getState();
                             }
                         });
