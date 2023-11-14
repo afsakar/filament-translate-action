@@ -31,7 +31,7 @@ class TranslatableAction
                                 ->default((string) config('app.locale')),
                         ])
                         ->modalSubmitActionLabel(__('filament-translate-action::filament-translate-action.translate'))
-                        ->action(function (array $data) use ($component) {
+                        ->action(function (array $data, $livewire) use ($component) {
                             $googleTranslate = new GoogleTranslate();
 
                             $source = $data['source'] ?: (string) config('app.locale');
@@ -40,6 +40,12 @@ class TranslatableAction
 
                             try {
                                 $component->state($googleTranslate);
+
+                                $livewire->dispatch('refresh-tiptap-editors', [
+                                    'statePath' => $component->getName(),
+                                    'content' => $googleTranslate,
+                                ]);
+                                
                                 Notification::make()
                                     ->title(__('filament-translate-action::filament-translate-action.success_title'))
                                     ->body(__('filament-translate-action::filament-translate-action.success_message'))
