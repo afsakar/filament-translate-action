@@ -45,7 +45,7 @@ class TranslatableAction
                                     'statePath' => $component->getName(),
                                     'content' => $googleTranslate,
                                 ]);
-                                
+
                                 Notification::make()
                                     ->title(__('filament-translate-action::filament-translate-action.success_title'))
                                     ->body(__('filament-translate-action::filament-translate-action.success_message'))
