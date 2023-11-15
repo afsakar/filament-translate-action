@@ -5,11 +5,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/afsakar/filament-translate-action/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/afsakar/filament-translate-action/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/afsakar/filament-translate-action.svg?style=flat-square)](https://packagist.org/packages/afsakar/filament-translate-action)
 
-
+![Screenshot](https://banners.beyondco.de/Filament%20Translate%20Action.png?theme=light&packageManager=composer+require&packageName=afsakar%2Ffilament-translate-action&pattern=architect&style=style_2&description=Translate+action+for+FilamentPHP&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
 
 This package provides a simple action to translate fields in FilamentPHP.
-
-![Screenshot](https://raw.githubusercontent.com/afsakar/filament-translate-action/main/art/filament-translatable-action.gif)
 
 ## Installation
 
@@ -23,12 +21,6 @@ You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="filament-translate-action-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-translate-action-views"
 ```
 
 This is the contents of the published config file:
@@ -57,6 +49,10 @@ RichEditor::make('body')
     
 ...
 ```
+
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/afsakar/filament-translate-action/main/art/filament-translatable-action.gif)
 
 ## Testing
 
