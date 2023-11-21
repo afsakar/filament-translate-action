@@ -7,6 +7,7 @@ use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Notifications\Notification;
+
 class TranslatableAction
 {
     public static function make(): void
@@ -37,7 +38,7 @@ class TranslatableAction
 
                             $text = null;
 
-                            if(class_exists('FilamentTiptapEditor\TiptapEditor') && $component instanceof \FilamentTiptapEditor\TiptapEditor) {
+                            if (class_exists('FilamentTiptapEditor\TiptapEditor') && $component instanceof \FilamentTiptapEditor\TiptapEditor) {
                                 match (data_get($component->getOutput(), 'value')) {
                                     'json' => $text = tiptap_converter()->asJSON($component->getState()),
                                     'text' => $text = tiptap_converter()->asText($component->getState()),
