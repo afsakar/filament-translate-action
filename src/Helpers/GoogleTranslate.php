@@ -13,11 +13,11 @@ class GoogleTranslate
      * Retrieves the translation of a text
      *
      * @param  string  $source
-     *            Original language of the text on notation xx. For example: es, en, it, fr...
+     *                          Original language of the text on notation xx. For example: es, en, it, fr...
      * @param  string  $target
-     *            Language to which you want to translate the text in format xx. For example: es, en, it, fr...
+     *                          Language to which you want to translate the text in format xx. For example: es, en, it, fr...
      * @param  string  $text
-     *            Text that you want to translate
+     *                        Text that you want to translate
      * @return string a simple string with the translation of the text in the target language
      */
     public static function translate($source, $target, $text)
@@ -37,11 +37,11 @@ class GoogleTranslate
      * @internal
      *
      * @param  string  $source
-     *            Original language taken from the 'translate' function
+     *                          Original language taken from the 'translate' function
      * @param  string  $target
-     *            Target language taken from the ' translate' function
+     *                          Target language taken from the ' translate' function
      * @param  string  $text
-     *            Text to translate taken from the 'translate' function
+     *                        Text to translate taken from the 'translate' function
      * @return string The response of the translation service in JSON format
      */
     protected static function requestTranslation($source, $target, $text)
@@ -67,7 +67,7 @@ class GoogleTranslate
      * Dump of the JSON's response in an array
      *
      * @param  string  $json
-     *            The JSON object returned by the request function
+     *                        The JSON object returned by the request function
      * @return string A single string with the translation
      */
     protected static function getSentencesFromJSON($json)
