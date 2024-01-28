@@ -22,13 +22,15 @@ class TranslatableAction
                             Select::make('source')
                                 ->label(__('filament-translate-action::filament-translate-action.source'))
                                 ->options(fn () => getLangs())
+                                ->reactive()
                                 ->searchable()
                                 ->default((string) config('app.locale')),
                             Select::make('target')
                                 ->label(__('filament-translate-action::filament-translate-action.target'))
-                                ->options(fn () => getLangs())
-                                ->searchable()
-                                ->default((string) config('app.locale')),
+                                ->options(fn ($get) => collect(getLangs())
+                                    ->filter(fn ($locale, $key) => $key != $get('source'))
+                                    ->toArray())
+                                ->searchable(),
                         ])
                         ->modalSubmitActionLabel(__('filament-translate-action::filament-translate-action.translate'))
                         ->action(function (array $data, $livewire) use ($component) {
