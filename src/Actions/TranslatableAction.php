@@ -47,7 +47,7 @@ class TranslatableAction
                             } else {
                                 $text = $component->getState();
                             }
-                            
+
                             try {
                                 $googleTranslate = $googleTranslate->translate($source, $data['target'], $text);
                                 $component->state($googleTranslate);
@@ -65,7 +65,7 @@ class TranslatableAction
                             } catch (\Exception $exception) {
                                 Notification::make()
                                     ->title(__('filament-translate-action::filament-translate-action.error_title'))
-                                    ->body(__('filament-translate-action::filament-translate-action.error_message'). '<br/>' . $exception->getMessage())
+                                    ->body(__('filament-translate-action::filament-translate-action.error_message') . '<br/>' . $exception->getMessage())
                                     ->danger()
                                     ->send();
 
