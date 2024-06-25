@@ -1,8 +1,6 @@
 # Translate action for FilamentPHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/afsakar/filament-translate-action.svg?style=flat-square)](https://packagist.org/packages/afsakar/filament-translate-action)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/afsakar/filament-translate-action/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/afsakar/filament-translate-action/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/afsakar/filament-translate-action/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/afsakar/filament-translate-action/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/afsakar/filament-translate-action.svg?style=flat-square)](https://packagist.org/packages/afsakar/filament-translate-action)
 
 ![Screenshot](https://banners.beyondco.de/Filament%20Translate%20Action.png?theme=light&packageManager=composer+require&packageName=afsakar%2Ffilament-translate-action&pattern=architect&style=style_2&description=Translate+action+for+FilamentPHP&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
