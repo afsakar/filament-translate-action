@@ -1,12 +1,12 @@
 {
-    "name": "afsakar/filament-translate-action",
+    "name": "ahmadnajmdev/filament-translator",
     "description": "Translate action for FilamentPHP",
     "keywords": [
-        "afsakar",
+        "ahmad",
         "laravel",
-        "filament-translate-action"
+        "filament-translator"
     ],
-    "homepage": "https://github.com/afsakar/filament-translate-action",
+    "homepage": "https://github.com/ahmadnajmdev/filament-translate-action",
     "support": {
         "issues": "https://github.com/afsakar/filament-translate-action/issues",
         "source": "https://github.com/afsakar/filament-translate-action"
@@ -14,8 +14,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Azad Furkan ŞAKAR",
-            "email": "afsakarr@gmail.com",
+            "name": "Ahmad Najm",
+            "email": "ahmadnajim666@gmail.com",
             "role": "Developer"
         }
     ],
@@ -25,6 +25,7 @@
         "spatie/laravel-package-tools": "^1.15.0",
         "illuminate/contracts": "^11.0"
     },
+    
     "require-dev": {
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
