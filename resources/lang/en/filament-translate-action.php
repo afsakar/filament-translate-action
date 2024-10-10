@@ -10,4 +10,6 @@ return [
     'success_message' => 'Content has been translated successfully.',
     'error_title' => 'Error!',
     'error_message' => 'Content could not be translated.',
+    'original_content' => 'Original Content',
+    'translated_content' => 'Translated Content',
 ];

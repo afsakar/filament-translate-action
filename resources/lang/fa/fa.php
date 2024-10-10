@@ -9,4 +9,6 @@ return [
     'success_message' => 'محتوا با موفقیت ترجمه شد.',
     'error_title' => 'خطا!',
     'error_message' => 'محتوا قابل ترجمه نمی باشد.',
+    'original_content' => 'محتوای اصلی',
+    'translated_content' => 'محتوای ترجمه شده',
 ];
