@@ -2,6 +2,4 @@
 
 namespace Afsakar\FilamentTranslateAction;
 
-class FilamentTranslateAction
-{
-}
+class FilamentTranslateAction {}

@@ -10,4 +10,6 @@ return [
     'success_message' => 'İçerik başarıyla çevrildi.',
     'error_title' => 'Hata!',
     'error_message' => 'İçerik çevrilemedi.',
+    'original_content' => 'Orijinal İçerik',
+    'translated_content' => 'Çevrilen İçerik',
 ];
